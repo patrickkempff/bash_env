@@ -13,16 +13,21 @@ Just paste this into the terminal:
 ## Commands
 
 View the current headers of a given url:
+
 `headers google.nl`
 
 Quick cd to the Development directory:
+
 `dev`
 
 Quick cd to the Vagrant boxes directory:
+
 `vgb`
 
 Open file in Sublime Text:
+
 `slt file.ext`
 
 Make a new file and open it in Sublime Text:
+
 `sltn file.ext`
