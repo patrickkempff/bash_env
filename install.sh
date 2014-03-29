@@ -25,8 +25,6 @@ timestamp=`/bin/date +s%s`
 target_file="$HOME/.bash_profile"
 backup_file="${target_file}.pk.bck-saved-${timestamp}"
 
-test_file="$HOME/test.test"
-
 # Print a message to the console.
 log() { printf "$*\n" ; return $? ; }
 
@@ -35,8 +33,7 @@ fail() { log "\nERROR: $*\n" ; exit 1 ; }
 
 welcome() {
 	echo "Hello! I am going to install your new bash profile."
-	
-	sleep 3
+	sleep 2
 
 	echo ""
 }
@@ -45,10 +42,11 @@ backup() {
 	if [ -f "${target_file}" ]
 	then 
 		echo "To be sure I am are going to make a backup.."
+		sleep 1
 		cp ${target_file} ${backup_file} || fail "I could not backup of file ${target_file}. Please make sure that I can write to this directory!"
 		echo "The backup location is: ${backup_file}"
 		
-		sleep 3
+		sleep 2
 
 		echo ""
 	else 
@@ -58,14 +56,14 @@ backup() {
 
 download() {
 	curl -o ${target_file} https://raw.githubusercontent.com/websdesign/bash_profile/master/bash_profile || fail "Could not download bash_profile"
-	sleep 3
+	sleep 2
 
 	echo ""
 	echo "We are done. In order for the changes to take effect, please restart the Terminal."
 	echo "Have a nice day!"
 	echo ""
 
-	sleep 3
+	sleep 1
 }
 
 
