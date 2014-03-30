@@ -17,6 +17,7 @@ alias slt='open -a "Sublime Text"'
 alias vgb='cd ~/Vagrant\ Boxes'
 alias dev='cd ~/Development'
 alias his='history'
+alias f='open .'
 
 # Creates a new file and opens it in sublime text.
 # Usage: "sltn my_file.ext"
