@@ -48,6 +48,7 @@ Open the current folder in Finder:
 	f
 
 Cd to the current Finder folder:  
+	
 	cdf
 
 Create a new folder and cd inside:  
