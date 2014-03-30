@@ -19,7 +19,7 @@ Once the profile has been installed, you can update it by typing the following c
 
 ## Usage examples
 
-Only the primarily commands are listed below , so please consider the profile itself as required reading for optimal usage.
+Only the primarily commands are listed below , so please consider [the profile itself](bash_profile) as required reading for optimal usage.
 
 ### General
 
