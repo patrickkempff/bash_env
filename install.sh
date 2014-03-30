@@ -58,8 +58,10 @@ download() {
 	curl -o ${target_file} https://raw.githubusercontent.com/websdesign/bash_profile/master/bash_profile || fail "Could not download bash_profile"
 	sleep 2
 
+	source target_file
+
 	echo ""
-	echo "We are done. In order for the changes to take effect, please restart the Terminal."
+	echo "I have applied your new .bash_profile for your. Hope you like it."
 	echo "Have a nice day!"
 	echo ""
 
