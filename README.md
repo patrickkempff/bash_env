@@ -31,3 +31,7 @@ Open file in Sublime Text:
 Make a new file and open it in Sublime Text:
 
 `sltn file.ext`
+
+Open the current folder in Finder:
+
+`f`
