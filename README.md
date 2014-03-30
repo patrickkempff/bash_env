@@ -54,6 +54,30 @@ Create a new folder and cd inside:
 	
 	mcd
 
+Create a new folder and cd inside:  
+	
+	mcd
+
+Generate a random password salt with a given length or a default length of 32 if none is given: 
+
+	salt
+	salt 64
+	salt 16
+
+Generate a random password:
+
+	password
+
+### Git
+
+Show a compact and colorful git log:
+
+	gl
+
+Show the complete git log:
+
+	gll
+
 
 ### Networking
 

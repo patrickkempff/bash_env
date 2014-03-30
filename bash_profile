@@ -95,11 +95,23 @@ alias myip='curl ip.appspot.com'            # Public facing IP Address
 alias connections='lsof -i'  				# Show all open TCP/IP sockets
 alias flush_dns='dscacheutil -flushcache'   # Flush out the DNS Cache
 
+# Decode a url
+alias urldecode='python -c "import sys, urllib as ul; print ul.unquote_plus(sys.argv[1])"'
+
+# Git
+
+# Nice git log
+alias gl="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias gll="git log --graph --full-history --all --color"
+
 
 # Applications
 
 alias f='open -a "Finder" ./' 				# Open current folder in Finder
 alias slt='open -a "Sublime Text"'  		# Open given file in Sublime Text.
+
+# Open the iOS Simulator
+alias ios="open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app"
 
 alias bash_profile_update='curl -s https://raw.githubusercontent.com/websdesign/bash_profile/master/install.sh | bash'
 
@@ -120,6 +132,21 @@ function mcd () { mkdir -p "$1" && cd "$1"; }
 # Move a file to the trash.
 function trash () { command mv "$@" ~/.Trash ; } 
 
+# Generate a salt with a given length.
+salt(){
+    if [[ $# == 0 ]]; then
+        openssl rand -base64 32
+    else
+        openssl rand -base64 $1
+    fi
+}
+
+password(){
+    dd if=/dev/random bs=16 count=1 2>/dev/null | base64 | sed 's/=//g'
+}
+
+# Generate a random password
+alias password='dd if=/dev/random bs=16 count=1 2>/dev/null | base64 | sed 's/=//g''
 
 
 # Cd to the current Finder folder.
