@@ -1,41 +1,87 @@
 # Bash profile for Terminal
 
-.bash_profile for your convenience. This profile enables colors and introduces some custom commands to your terminal.
+.bash_profile for your convenience. This profile enables colors and introduces handy custom commands to your terminal.
+
+## A quick primer on .bash_profile for mac users
+
+There is a hidden file in your Mac’s user directory named .bash_profile. This file is loaded before Terminal loads your shell environment and contains all the startup configuration and preferences for your command line interface. Within it you can change your terminal promt, change the colors of text, add aliases to functions you use all the time, and so much more.
+
+
+## Getting Started
+
+To install, just paste this into the terminal:
+
+	curl -s https://raw.githubusercontent.com/websdesign/bash_profile/master/install.sh | bash
+
+Once the profile has been installed, you can update it by typing the following command:
+
+	bash_profile_update
+
+## Usage examples
+
+Only the primarily commands are listed below , so please consider the profile itself as required reading for optimal usage.
+
+### General
+
+Quick cd to the Development directory:  
+
+	dev
+
+Quick cd to the Vagrant boxes directory:  
+
+	vgb
+
+Remove all .DS_Store files (recursivly):  
+
+	remove_ds
+
+Open a file in Sublime Text:  
+
+	slt file.ext
+
+Create a new file and open it in Sublime Text:  
+
+	sltn file.ext
+
+Open the current folder in Finder:  
+
+	f
+
+Cd to the current Finder folder:  
+	cdf
+
+Create a new folder and cd inside:  
+	
+	mcd
+
+
+### Networking
+
+View the response headers of a given url:  
+
+	headers google.nl
+
+
+View the public facing ip adress:  
+
+	myip
+
+List all active connections:  
+
+	connections
+
+Flush the DNS cache: 
+
+	flush_dns
+
+### Dummy files
+
+You can use `make1mb`, `make5mb`, `make10mb`, `make100mb` and `make1gb` to generate a dummy file of the given size (all zeros).
 
 
 
-## Installation
+## Special thanks:
 
-Just paste this into the terminal:
+Nathaniel Landau, http://natelandau.com/  
+Alias, http://alias.sh/
 
-`curl -s https://raw.githubusercontent.com/websdesign/bash_profile/master/install.sh | bash`
-
-## Commands
-
-View the current headers of a given url:
-
-`headers google.nl`
-
-Quick cd to the Development directory:
-
-`dev`
-
-Quick cd to the Vagrant boxes directory:
-
-`vgb`
-
-Open file in Sublime Text:
-
-`slt file.ext`
-
-Make a new file and open it in Sublime Text:
-
-`sltn file.ext`
-
-Open the current folder in Finder:
-
-`f`
-
-Update the your bash profile to the latest version:
-
-`bash_profile_update`
