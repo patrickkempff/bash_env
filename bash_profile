@@ -13,15 +13,18 @@ alias lsa='ls -a'
 alias header='curl -I --compress'
 alias headers='curl -I --compress'
 
+alias f='open .'
 alias slt='open -a "Sublime Text"'
 alias vgb='cd ~/Vagrant\ Boxes'
 alias dev='cd ~/Development'
 alias his='history'
-alias f='open .'
+
+alias bash_profile_update='curl -s https://raw.githubusercontent.com/websdesign/bash_profile/master/install.sh | bash'
 
 # Creates a new file and opens it in sublime text.
 # Usage: "sltn my_file.ext"
 function sltn() { touch $@; slt $@; }
+
 function gi() { curl http://gitignore.io/api/$@ ;}
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*

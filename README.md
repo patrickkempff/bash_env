@@ -35,3 +35,7 @@ Make a new file and open it in Sublime Text:
 Open the current folder in Finder:
 
 `f`
+
+Update the your bash profile to the latest version:
+
+`bash_profile_update`
