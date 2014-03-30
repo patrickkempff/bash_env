@@ -1,6 +1,6 @@
 # Bash profile for Terminal
 
-.bash_profile for your convenience. This profile enables colors and introduces handy custom commands to your terminal.
+A .bash_profile for your convenience. This profile enables colors and introduces handy custom commands to your terminal.
 
 ## A quick primer on .bash_profile for mac users
 
