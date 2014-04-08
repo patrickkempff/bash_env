@@ -33,8 +33,8 @@ export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
 # Add colors to grep
-export GREP_OPTIONS='–color=auto'
-export GREP_COLOR='1;35;40'
+# export GREP_OPTIONS='–color=auto'
+# export GREP_COLOR='1;35;40'
 
 # Set default blocksize, get consistent output across "du", "df", and "ls -s".
 export BLOCKSIZE=1k
