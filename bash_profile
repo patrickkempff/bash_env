@@ -45,7 +45,7 @@ export EDITOR=/usr/bin/nano
 export HISTCONTROL=erasedups
 export HISTSIZE=10000
 
-export PATH=/usr/local/bin/:$PATH
+export PATH=/usr/local/bin:$PATH
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 
 
