@@ -117,6 +117,30 @@ alias urldecode='python -c "import sys, urllib as ul; print ul.unquote_plus(sys.
 alias gl="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gll="git log --graph --full-history --all --color"
 
+# View git repository online.
+github(){
+    URL=$(git remote -v | grep github.com | grep fetch | head -1 | awk '{print $2}' | sed 's/git:/http:/g')
+    echo "Opening GitHub repository: ${URL}"
+    open "${URL}"
+}
+
+beanstalk(){
+    URL=$(git remote -v | grep beanstalkapp.com | grep fetch | head -1 | awk '{print $2}' |  sed 's/\/.*\///g' | sed 's/:/\//g' | sed 's/git@/http:\/\//g'  | sed 's/.git//g')
+    echo "Opening Beanstalkapp repository: ${URL}"
+    open "${URL}"
+}
+
+function repo () {
+    REPO=$(git remote -v | grep github.com | grep fetch | head -1)
+
+    if [ "${REPO}" == "" ]
+    then
+        beanstalk
+    else
+        github
+    fi
+}
+
 
 # Applications
 

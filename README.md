@@ -55,9 +55,11 @@ Create a new folder and cd inside:
 	
 	mcd
 
-Create a new folder and cd inside:  
+Open the GitHub/Beanstalk web page of the current git repository:  
 	
-	mcd
+	repo
+	github
+	beanstalk
 
 Generate a random password salt with a given length or a default length of 32 if none is given: 
 
