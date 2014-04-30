@@ -60,6 +60,7 @@ export HISTSIZE=10000
 
 export PATH=/usr/local/bin:$PATH
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 
 # ///////////////////////////////////////////////////////////////////////////
@@ -201,6 +202,11 @@ function cdf () {
     )
     echo "cd to \"$currFolderPath\""
     cd "$currFolderPath"
+}
+
+serve(){
+    python -m SimpleHTTPServer 9005
+    open "http://0.0.0.0:9005"
 }
 
 # get current branch in git repo
