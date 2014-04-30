@@ -60,7 +60,13 @@ export HISTSIZE=10000
 
 export PATH=/usr/local/bin:$PATH
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+
+# RVM
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+# Include rvm scripts
+source "$HOME/.rvm/scripts/rvm" || echo 'rvm not installed.'
+
 
 
 # ///////////////////////////////////////////////////////////////////////////
