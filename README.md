@@ -55,12 +55,6 @@ Create a new folder and cd inside:
 	
 	mcd
 
-Open the GitHub/Beanstalk web page of the current git repository:  
-	
-	repo
-	github
-	beanstalk
-
 Generate a random password salt with a given length or a default length of 32 if none is given: 
 
 	salt
@@ -80,6 +74,13 @@ Show a compact and colorful git log:
 Show the complete git log:
 
 	gll
+
+
+Open the GitHub/Beanstalk web page of the current git repository:  
+	
+	repo
+	github
+	beanstalk
 
 
 ### Networking
