@@ -11,7 +11,7 @@ There is a hidden file in your Mac’s user directory named .bash_profile. This 
 
 To install, just paste this into the terminal:
 
-	curl -3s https://raw.githubusercontent.com/websdesign/bash_profile/master/install.sh | bash
+	curl -3s https://raw.githubusercontent.com/patrickkempff/bash_profile/master/install.sh | bash
 
 Once the profile has been installed, you can update it by typing the following command:
 

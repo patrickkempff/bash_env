@@ -161,7 +161,7 @@ alias slt='open -a "Sublime Text"'  		# Open given file in Sublime Text.
 # Open the iOS Simulator
 alias ios="open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app"
 
-alias bash_profile_update='curl -s https://raw.githubusercontent.com/websdesign/bash_profile/master/install.sh | bash'
+alias bash_profile_update='curl -s https://raw.githubusercontent.com/patrickkempff/bash_profile/master/install.sh | bash'
 
 
 # ///////////////////////////////////////////////////////////////////////////
