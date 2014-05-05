@@ -124,6 +124,7 @@ alias urldecode='python -c "import sys, urllib as ul; print ul.unquote_plus(sys.
 alias gl="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gll="git log --graph --full-history --all --color"
 
+
 # View git repository online.
 github(){
     URL=$(git remote -v | grep github.com | grep fetch | head -1 | awk '{print $2}' | sed 's/git:/http:/g')
@@ -148,6 +149,9 @@ function repo () {
     fi
 }
 
+rcommit() {
+    git commit -m"`curl -s http://whatthecommit.com/index.txt`"
+}
 
 # Applications
 
