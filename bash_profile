@@ -163,6 +163,9 @@ alias ios="open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimul
 
 alias bash_profile_update='curl -s https://raw.githubusercontent.com/patrickkempff/bash_profile/master/install.sh | bash'
 
+# files
+alias files_unhide='defaults write com.apple.finder AppleShowAllFiles TRUE && killall Finder'  #show hidden files
+alias files_hide='defaults write com.apple.finder AppleShowAllFiles FALSE && killall Finder'   #hide hidden files
 
 # ///////////////////////////////////////////////////////////////////////////
 # Methods
