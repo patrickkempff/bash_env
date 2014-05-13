@@ -102,6 +102,10 @@ alias dev='cd ~/Development'
 # Removes all .DS_Store files.
 alias remove_ds="find . -type f -name '*.DS_Store' -ls -delete"
 
+# Hide and unhide hidden files in finder
+alias files_unhide='defaults write com.apple.finder AppleShowAllFiles TRUE && killall Finder'  #show hidden files
+alias files_hide='defaults write com.apple.finder AppleShowAllFiles FALSE && killall Finder'   #hide hidden files
+
 # Full Recursive Directory Listing
 alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'' | less'
 
@@ -162,10 +166,6 @@ alias slt='open -a "Sublime Text"'  		# Open given file in Sublime Text.
 alias ios="open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app"
 
 alias bash_profile_update='curl -s https://raw.githubusercontent.com/patrickkempff/bash_profile/master/install.sh | bash'
-
-# files
-alias files_unhide='defaults write com.apple.finder AppleShowAllFiles TRUE && killall Finder'  #show hidden files
-alias files_hide='defaults write com.apple.finder AppleShowAllFiles FALSE && killall Finder'   #hide hidden files
 
 # ///////////////////////////////////////////////////////////////////////////
 # Methods
