@@ -112,4 +112,5 @@ You can use `make1mb`, `make5mb`, `make10mb`, `make100mb` and `make1gb` to gener
 
 Nathaniel Landau, http://natelandau.com/  
 Alias, http://alias.sh/
+Dion Snoeijen, http://www.diovisuals.com/
 
