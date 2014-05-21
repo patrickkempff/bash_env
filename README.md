@@ -81,6 +81,7 @@ Open the GitHub/Beanstalk web page of the current git repository:
 	repo
 	github
 	beanstalk
+	bitbucket
 
 
 ### Networking
