@@ -76,11 +76,12 @@ Show the complete git log:
 	gll
 
 
-Open the GitHub/Beanstalk web page of the current git repository:  
+Open the GitHub/Beanstalk/BitBucket web page of the current git repository: 
 	
 	repo
 	github
 	beanstalk
+	bitbucket
 
 
 ### Networking

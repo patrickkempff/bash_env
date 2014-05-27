@@ -142,14 +142,30 @@ beanstalk(){
     open "${URL}"
 }
 
-function repo () {
-    REPO=$(git remote -v | grep github.com | grep fetch | head -1)
+bitbucket(){
+    URL=$(git remote -v | grep bitbucket.org | grep fetch | head -1 | awk '{print $2}' | sed 's/git:/http:/g')
+    echo "Opening Bitbucket repository: ${URL}"
+    open "${URL}"
+}
 
-    if [ "${REPO}" == "" ]
+function repo () {
+    GITHUB=$(git remote -v | grep github.com | grep fetch | head -1)
+    BEANSTALK=$(git remote -v | grep beanstalkapp.com | grep fetch | head -1)
+    BITBUCKET=$(git remote -v | grep bitbucket.org | grep fetch | head -1)
+    
+    if [ "${GITHUB}" != "" ]
+    then
+        github
+    fi
+
+    if [ "${BEANSTALK}" != "" ]
     then
         beanstalk
-    else
-        github
+    fi
+
+    if [ "${BITBUCKET}" != "" ]
+    then
+        bitbucket
     fi
 }
 
