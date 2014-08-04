@@ -50,7 +50,8 @@ backup() {
 
 		echo ""
 	else 
-		fail "${target_file} does not exists."
+		touch "${target_file}"
+		backup
 	fi
 }
 
@@ -61,7 +62,7 @@ download() {
 	source $target_file
 
 	echo ""
-	echo "I have applied your new .bash_profile for your. Hope you like it."
+	echo "Please restart the terminal for the changes to take effect"
 	echo "Have a nice day!"
 	echo ""
 
