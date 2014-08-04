@@ -98,6 +98,8 @@ alias make1gb='mkfile 1000m ./1GB.dat'      # Creates a file of 1gb size (all ze
 
 alias vgb='cd ~/Vagrant\ Boxes'
 alias dev='cd ~/Development'
+alias exp='cd ~/Development/Experiments'
+alias p='cd ~/Development/Projects'
 
 # Removes all .DS_Store files.
 alias remove_ds="find . -type f -name '*.DS_Store' -ls -delete"
