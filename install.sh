@@ -56,7 +56,7 @@ backup() {
 }
 
 download() {
-	curl -3o ${target_file} https://raw.githubusercontent.com/websdesign/bash_profile/master/bash_profile || fail "Could not download bash_profile"
+	curl -sSL ${target_file} https://raw.githubusercontent.com/websdesign/bash_profile/master/bash_profile || fail "Could not download bash_profile"
 	sleep 2
 
 	source $target_file
