@@ -42,6 +42,10 @@ Open a file in Sublime Text:
 Create a new file and open it in Sublime Text:  
 
 	sltn file.ext
+	
+Open a given path in Visual Studio Code even if the path does not exist:
+
+	code file.ext	
 
 Open the current folder in Finder:  
 
