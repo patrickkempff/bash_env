@@ -192,6 +192,9 @@ alias bash_profile_update='curl -sSL https://raw.githubusercontent.com/patrickke
 # Create a new file and open it in Sublime Text.
 function sltn() { touch $@; slt $@; }
 
+# Open a given path in Visual Studio Code even if the path does not exist.
+function code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
+
 # Always list directory contents upon 'cd'
 # function cd() { builtin cd "$@"; la; }  
 
