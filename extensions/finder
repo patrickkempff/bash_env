@@ -1,0 +1,29 @@
+#!/bin/bash
+
+finder_requirements() {
+    return 0;
+}
+
+finder_load() {
+    
+    # Move a file to the trash.
+    function trash () { command mv "$@" ~/.Trash ; }  
+    
+    alias f='open -a "Finder" ./'
+
+    # Hide and unhide hidden files in finder
+    alias files_unhide='defaults write com.apple.finder AppleShowAllFiles TRUE && killall Finder'  #show hidden files
+    alias files_hide='defaults write com.apple.finder AppleShowAllFiles FALSE && killall Finder'   #hide hidden files    
+        
+    function cdf() {
+        cd "$(finder_get_current_dir)"
+    }
+}
+
+function finder_get_current_dir() {
+  osascript 2>/dev/null <<EOF
+    tell application "Finder"
+      return POSIX path of (target of window 1 as alias)
+    end tell
+EOF
+}

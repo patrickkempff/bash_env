@@ -1,0 +1,39 @@
+#!/bin/bash
+root="$(dirname "${BASH_SOURCE[0]}")"
+
+# Import bash_env dependencies.
+ . $root/includes/bash_env_globals.sh
+ . $root/includes/bash_env_functions.sh
+ 
+ 
+function main()
+{
+    # Figure out which command has been given.
+    case "$1" in
+        # Run the installation script.
+        install) 
+             bash_env_install $@
+        ;;
+        # Show help screen
+        help|-h|--help)  
+            echo ""
+            echo "Usage: `basename $0` [Action] [Options]"
+            echo "for example: `basename $0` install -f"
+            echo ""
+            echo "Actions:"
+            echo ""
+            echo "install    Install bash_env to the default install dir."
+            echo ""
+            echo "           Option	    GNU long option	    Meaning"
+            echo "           -f	   	    --force        	    Override existing installtion if needed"
+            echo ""
+            echo "remove     Remove the installed version from the system."
+            echo ""
+            echo "help       Show this message"
+            echo ""
+            exit 0             
+        ;;
+    esac
+}
+
+[ "$0" = "$BASH_SOURCE" ] && main $@ || bash_env_initialize $@

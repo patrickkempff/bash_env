@@ -1,0 +1,10 @@
+#!/bin/bash
+
+git_requirements() {
+    return 0;
+}
+
+git_load() {
+    alias gl="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+    alias gll="git log --graph --full-history --all --color"
+}
