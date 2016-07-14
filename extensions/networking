@@ -1,0 +1,12 @@
+#!/bin/bash
+
+networking_requirements() {
+    return 0;
+}
+
+networking_load() {
+    alias header='curl -I --compress'			        # View the response headers of a given URL
+    alias headers='curl -I --compress'			        # View the response headers of a given URL
+    alias myip='curl https://api.ipify.org && echo ""'  # Public facing IP Address
+    alias connections='lsof -i'  				        # Show all open TCP/IP sockets
+}

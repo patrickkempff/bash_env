@@ -47,6 +47,21 @@ Go to the parent of the parent directory:
 
 	...
 	
+### Networking
+
+View the response headers of a given url:  
+
+	headers google.nl
+
+
+View the public facing ip adress:  
+
+	myip
+
+List all active connections:  
+
+	connections
+
 
 ### Git
 
