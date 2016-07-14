@@ -19,7 +19,7 @@ By default bash_env ships with the following extensions:
 
 - [extensions/profile](#profile)
 - [extensions/devenv](#devenv)
-- [extensions/finder](#finder) (macOS only)
+- [extensions/finder](#finder-macos-only) (macOS only)
 - [extensions/git](#git)
 
 To enable/disable certain extensions take a look at the [enabled.conf](enabled.conf) file.
@@ -40,7 +40,7 @@ Show the complete git log:
 
 ### DevEnv
 
-Creates the following directories:
+Creates the following directories for your dev environment:
 
 ```
 ~/Development/Projects
@@ -59,7 +59,7 @@ Quick cd to the projects experiments:
 
 	e		
 
-### finder (macOS only)
+### Finder (macos only)
 
 The finder extension introduces the following aliases:
 
