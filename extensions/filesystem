@@ -1,0 +1,29 @@
+#!/bin/bash
+
+filesystem_requirements() {
+    return 0;
+}
+
+filesystem_load() {
+    # Removes all .DS_Store files.
+    alias remove_ds="find . -type f -name '*.DS_Store' -ls -delete"
+
+    alias cp='cp -iv'
+    alias mv='mv -iv'
+    alias ls='ls -GlFh'
+    alias la='ls -Ap'    
+
+    # Make a new directory and cd inside
+    function mcd () { mkdir -p "$1" && cd "$1"; }    
+
+    alias cd..='cd ../'                         # Go back 1 directory level (for fast typers)
+    alias ..='cd ../'                           # Go back 1 directory level
+    alias ...='cd ../../'                       # Go back 2 directory levels
+    alias .3='cd ../../../'                     # Go back 3 directory levels
+    alias .4='cd ../../../../'                  # Go back 4 directory levels
+    alias .5='cd ../../../../../'               # Go back 5 directory levels
+    alias .6='cd ../../../../../../'            # Go back 6 directory levels  
+
+    # Full Recursive Directory Listing
+    alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'' | less'
+}

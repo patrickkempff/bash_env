@@ -18,6 +18,7 @@ and install bash_env by typing the following command:
 By default bash_env ships with the following extensions:
 
 - [extensions/profile](#profile)
+- [extensions/filesystem](#filesystem)
 - [extensions/devenv](#devenv)
 - [extensions/finder](#finder-macos-only) (macOS only)
 - [extensions/git](#git)
@@ -27,6 +28,25 @@ To enable/disable certain extensions take a look at the [enabled.conf](enabled.c
 ### Profile
 
 The profile extension introduces colors to bash and fetches the current git branch if possible.
+
+### Filesystem
+
+Recursively list the directory contents:
+
+	lr
+
+Remove all .DS_Store files in the current directory and its parents:
+
+	remove_ds
+
+Go to the parent directory:
+
+	..
+
+Go to the parent of the parent directory:
+
+	...
+	
 
 ### Git
 
@@ -82,3 +102,4 @@ Show system files:
 Move a directory or file to the trash:  
 	
 	trash /dir/another/dir
+	
