@@ -19,6 +19,7 @@ By default bash_env ships with the following extensions:
 
 - [extensions/profile](#profile)
 - [extensions/filesystem](#filesystem)
+- [extensions/networking](#networking)
 - [extensions/devenv](#devenv)
 - [extensions/finder](#finder-macos-only) (macOS only)
 - [extensions/git](#git)
