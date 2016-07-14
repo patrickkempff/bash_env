@@ -5,13 +5,13 @@ It enables colors and introduces handy custom commands to your terminal.
 
 ## Gettings started
 
-To install, just paste this into the terminal:
+Start by cloning the repo:
 
-	curl -sSL https://raw.githubusercontent.com/patrickkempff/bash_profile/master/install.sh | bash
+	git clone https://github.com/patrickkempff/bash_env.git && cd bash_env
 
-Once the profile has been installed, you can update it by typing the following command:
+and install bash_env by typing the following command:
 
-	bash_profile_update
+	./bash_env install
 
 ## Extensions
 
