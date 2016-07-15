@@ -23,6 +23,7 @@ By default bash_env ships with the following extensions:
 - [extensions/devenv](#devenv)
 - [extensions/finder](#finder-macos-only) (macOS only)
 - [extensions/git](#git)
+- [extensions/makefile](#makefile)
 
 To enable/disable certain extensions take a look at the [enabled.conf](enabled.conf) file.
 
@@ -119,3 +120,6 @@ Move a directory or file to the trash:
 	
 	trash /dir/another/dir
 	
+### Makefile
+
+You can use `make1mb`, `make5mb`, `make10mb`, `make100mb`, `make1gb`, `make10gb` and `make100gb` to generate a dummy file of the given size (all zeros).
