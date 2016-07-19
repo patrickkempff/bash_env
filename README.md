@@ -1,7 +1,6 @@
 # Bash Environment / Bash Profile
 
-bash_env is a modulair collection of config, aliases and scripts for bash.
-It enables colors and introduces handy custom commands to your terminal.
+bash_env is a modulair approach of hanling config, aliases and scripts in bash. It enables colors and introduces handy custom commands to your terminal.
 
 ## Gettings started
 
