@@ -1,0 +1,13 @@
+#!/bin/bash
+
+nvm_requirements() {
+    if [ -s "$HOME/.nvm/nvm.sh" ]; then
+        return 0;
+    fi
+    return 1;
+}
+
+nvm_load() {
+    export NVM_DIR="$HOME/.nvm"
+    [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+}

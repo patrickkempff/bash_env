@@ -1,0 +1,13 @@
+#!/bin/bash
+
+rvm_requirements() {
+    if [ -s "$HOME/.rvm/scripts/rvm" ]; then
+        return 0;
+    fi
+    return 1;
+}
+
+rvm_load() {
+    export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+    [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load R$
+}
