@@ -140,8 +140,6 @@ function bash_env_extension_load()
                 $extension$load;     
                 
                 BASH_ENV_EXTENSIONS_LOADED=("${BASH_ENV_EXTENSIONS_LOADED[@]}" $extension);            
-            else
-               echo "Could not load extension $extension."     
             fi
         else 
             echo "Not a valid module." 
