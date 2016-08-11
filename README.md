@@ -83,17 +83,21 @@ Creates the following directories for your dev environment:
 ~/Development/Boxes
 ~/Development/Experiments
 ```
-Quick cd to the projects directory:
+Quick cd to the projects directory (~/Development/Projects):
 
 	p
 	
-Quick cd to the projects boxes:
+Quick cd to the boxes directory  (~/Development/Boxes):
 
 	b
 	
-Quick cd to the projects experiments:
+Quick cd to the experiments directory  (~/Development/Experiments):
 
-	e		
+	e	
+
+Quick cd to the notes directory  (~/Development/Notes):
+
+	n		
 
 ### Finder (macos only)
 
