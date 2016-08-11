@@ -8,8 +8,10 @@ devenv_load() {
     mkdir -p "${HOME}/Development/Projects"
     mkdir -p "${HOME}/Development/Boxes"
     mkdir -p "${HOME}/Development/Experiments"
+    mkdir -p "${HOME}/Development/Notes"
 
     alias p="cd ${HOME}/Development/Projects"
     alias b="cd ${HOME}/Development/Boxes"
     alias e="cd ${HOME}/Development/Experiments"
+    alias n="cd ${HOME}/Development/Notes"
 }
