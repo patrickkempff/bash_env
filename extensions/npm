@@ -1,0 +1,12 @@
+#!/bin/bash
+
+npm_requirements() {
+    if hash npm 2>/dev/null; then
+        return 0;
+    fi
+    return 1;
+}
+
+npm_load() {
+    function npm-do { (PATH=$(npm bin):$PATH; eval $@;) }
+}

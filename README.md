@@ -23,6 +23,7 @@ By default bash_env ships with the following extensions:
 - [extensions/finder](#finder-macos-only) (macOS only)
 - [extensions/git](#git)
 - [extensions/makefile](#makefile)
+- [extensions/npm](#npm)
 
 To enable/disable certain extensions take a look at the [enabled.conf](enabled.conf) file.
 
@@ -126,3 +127,24 @@ Move a directory or file to the trash:
 ### Makefile
 
 You can use `make1mb`, `make5mb`, `make10mb`, `make100mb`, `make1gb`, `make10gb` and `make100gb` to generate a dummy file of the given size (all zeros).
+
+### npm
+
+One nice npm feature is that you can install packages with executables locally. 
+When executables are installed via npm packages, npm links to them:
+
+* In local installs, they are linked to from a node_modules/.bin/ directory.
+* In global installs, they are linked to from a global bin/ directory (e.g. /usr/local/bin).
+
+When working with multiple project which have their own local node dependencies (like webpack, gulp etc.), it is a best practice to only install the package locally instead of globally (to prevent version conflicts). 
+
+One thing to keep in mind is that if you want to run the local webpack binary (from node_modules/.bin) you have 2 options;
+
+1. add an npm script 
+2. prepend the node_modules/.bin folder to the command you want to execute.
+
+Sometimes it is not feasable to add an sepperate npm script for each node_module binary and that is where npm-do comes into play.
+To execute the binary located at node_modules/.bin/webpack, just run
+	
+	npm-do webpack -p --colors
+	
